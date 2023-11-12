@@ -1,0 +1,55 @@
+.caja-archivo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+.caja-archivo ul{
+    font-style: italic;
+}
+
+.datos-archivo {
+    display: flex;
+    list-style: none;
+}
+
+.datos-archivo li {
+    margin-left: 20px;
+}
+
+.subir {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.subir i {
+    margin-right: 5px;
+}
+
+.opciones{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.opciones a:hover{
+    color: #61af63;
+    transition: 0.5s;
+}
+
+.titulo-archivos{
+    display: flex;
+    flex-direction: column;
+}
+
+.borrar{
+    color: white;
+    text-decoration: none;
+}
+
+.borrar :hover{
+    color: red;
+    transition: 0.5s;
+}
