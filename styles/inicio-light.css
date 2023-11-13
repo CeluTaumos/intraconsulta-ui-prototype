@@ -79,6 +79,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    display: 1;
 
 }
 
@@ -135,10 +136,10 @@ body {
 }
 
 aside {
-    height: 100%;
-    position: fixed;
+ 
     padding: 0;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
     background-color: #262626;
     color: white;
     width: 15.625em;
