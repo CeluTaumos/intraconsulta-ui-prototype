@@ -173,12 +173,36 @@ main {
     font-weight: 500;
    font-size: x-large;
 }
-
-.caja-materia{
+.caja-herramientas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1.25em;
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+  }
+  
+  .caja-materia {
     background-color: #4D4C4C;
-    border: solid 0.125em;
-    border-color: #DBDBDB;
-}
+    border: 1px solid #DBDBDB;
+    padding: 1%;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .caja-materia-titulo {
+    display: flex;
+    font-size: 1.25em;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.438em;
+  }
+  
+  
+  
 
 #form i {
     font-size: 1.563em;
@@ -193,10 +217,7 @@ main {
     background-color: rgb(64, 169, 229);
 }
 
-footer {
-    margin-left: 23%;
-    text-align: center;
-}
+
 
 hr {
     border-color: #444;
@@ -204,6 +225,13 @@ hr {
     margin-left: 26%;
 }
 
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border-top:solid 2px #4D4C4C;
+}
 .pie p {
     color: #444;
     font-size: 0.938em;
