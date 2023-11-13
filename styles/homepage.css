@@ -17,12 +17,22 @@ h1 {
 }
 
 header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.85);
-    padding-top: 24px !important;
-    padding-bottom: 24px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     position: fixed;
     width: 100%;
     z-index: 1;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+header p{
+    display: inline;
+    color: #ffffff;
 }
 
 .login {
