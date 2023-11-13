@@ -84,27 +84,33 @@ body {
     background-color: #519253;
     transition: 0.5s;
 }
-#campanita{
-    width: 1.875em;
-    height:1.875em;
-}
-#intraconsulta{
 
-    width:2.5em;
-    height:2.5em;  
+#campanita {
+    width: 1.875em;
+    height: 1.875em;
 }
-#activo{
+
+#intraconsulta {
+
+    width: 2.5em;
+    height: 2.5em;
+}
+
+#activo {
     color: #519253;
 }
+
 .dots {
     padding: 0;
     margin: 0%;
 }
-.centrar{
+
+.centrar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .links {
     padding-top: 0.313em;
     font-weight: bold;
@@ -134,14 +140,23 @@ aside {
 .aside-items li {
     padding: 0.625em;
     padding-left: 1.25em;
+    padding: 0.625em;
+    display: flex;
+    padding-left: 1.25em;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px;
+
 }
 
-.aside-items i {
-    padding-right: 0.938em;
-}
 
 .aside-items {
     padding: 0;
+
+    padding: 0.625em;
+    padding-left: 1.25em;
+
     list-style: none;
 }
 
@@ -176,8 +191,9 @@ main {
 
 .bienvenido-materias h2 {
     font-weight: 500;
-   font-size: x-large;
+    font-size: x-large;
 }
+
 .caja-herramientas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -188,28 +204,31 @@ main {
     justify-content: center;
     justify-items: center;
     align-content: center;
-  }
-  
-  .caja-materia {
+}
+
+.caja-materia {
     background-color: #4D4C4C;
     border: 1px solid #DBDBDB;
     padding: 1%;
     margin: 0;
+    height: 100%;
     width: 100%;
-  }
-  
-  .caja-materia-titulo {
+}
+
+.caja-materia-titulo {
     display: flex;
     font-size: 1.25em;
     justify-content: flex-start;
     align-items: center;
     gap: 0.438em;
-  }
-  
-  
-  #tools{
+}
+
+
+#tools {
     fill: #519253;
-  }
+    width: 20px;
+    height: 20px;
+}
 
 #form i {
     font-size: 1.563em;
@@ -232,13 +251,14 @@ hr {
     margin-left: 26%;
 }
 
-footer{
+footer {
     display: flex;
     text-align: center;
     justify-content: center;
     align-content: center;
-    border-top:solid 2px #4D4C4C;
+    border-top: solid 2px #4D4C4C;
 }
+
 .pie p {
     color: #444;
     font-size: 0.938em;
