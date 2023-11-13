@@ -84,12 +84,22 @@ body {
     background-color: #519253;
     transition: 0.5s;
 }
-
+#campanita{
+    width: 1.875em;
+    height:1.875em;
+}
+#activo{
+    color: #519253;
+}
 .dots {
     padding: 0;
     margin: 0%;
 }
-
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .links {
     padding-top: 0.313em;
     font-weight: bold;
@@ -143,7 +153,7 @@ main {
     background-color: #121212;
 }
 
-.materias-act {
+.bienvenido {
     box-sizing: border-box;
     padding: 1.875em;
     align-items: center;
@@ -152,102 +162,22 @@ main {
     margin-left: 20%;
 }
 
-.titulo-materias {
+.bienvenido-materias {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
     align-items: center;
 }
 
-.titulo-materias h2 {
+.bienvenido-materias h2 {
     font-weight: 500;
    font-size: x-large;
 }
 
-.titulo-caja-materia {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2%;
-}
-
-.titulo-caja-materia p {
-    margin: 0;
-    font-size: 0.75em;
-
-}
-
-.titulo-caja-materia h3 {
-    margin: 0%;
-    font-size: 0.938em;
-    font-weight: bold;
-}
-
-.titulo-caja-materia-dots {
-    display: flex;
-    align-items: center;
-}
-
-.titulo-caja-materia-dots i {
-    font-size: 0.938em;
-    padding-left: 5em;
-}
-
-.boton-organizar-materias {
-    background-color: #3d3c3c;
-    padding: 0.625em;
-    border-radius: 0.313em;
-    text-decoration: none;
-    color: white;
-}
-
-.caja-materia {
-    background-color: #262626 !important;
-
-    display: flex;
-    flex-direction: row;
-    /* align-content: center; */
-    justify-content: flex-start;
-    align-items: baseline;
-    border-radius: 0.313em;
-    margin-bottom: 2%;
-}
-
-.caja-materia-opciones li {
-    list-style: none;
-    padding: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.caja-materia-opciones i {
-    font-size: 1.625em;
-}
-
-.caja-materia-opciones p {
-    font-size: 0.75em;
-    margin: 0;
-    margin-top: 25%;
-}
-
-.caja-materia-opciones ul {
-
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-
-}
-
-.caja-materia-opciones a {
-    text-decoration: none;
-    color: white;
-}
-
-.cajita-op {
-    width: 6em;
-
+.caja-materia{
+    background-color: #4D4C4C;
+    border: solid 0.125em;
+    border-color: #DBDBDB;
 }
 
 #form i {
