@@ -14,15 +14,16 @@ h1 {
     text-align: center;
     font-weight: 400;
     font-size: 24px;
+    margin-bottom: -5px;
 }
 
 header {
     display: flex;
     gap: 10px;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.85);
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    background-color: rgba(0, 0, 0, 0.782);
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -30,9 +31,12 @@ header {
     padding-left: 15px;
 }
 
+
 header p{
     display: inline;
     color: #ffffff;
+    font-weight: 250;
+    font-size: larger;
 }
 
 .login {
@@ -56,7 +60,7 @@ header p{
 }
 
 .cuadros {
-    margin-top: 10%;
+    margin-top: 7%;
     margin-bottom: 2%;
     display: flex;
 }
@@ -90,6 +94,10 @@ header p{
     flex-direction: column;
 }
 
+#con{
+    margin-top: 20px;
+}
+
 label {
     padding: 2%;
 }
@@ -104,16 +112,17 @@ input {
     padding: 2%;
     text-decoration: none;
     text-align: center;
-    background-color: #2196F3 !important;
+    background-color: #4caf50 !important;
     color: #fff;
     margin-top: 16px;
     border-radius: 3px;
+    padding-top: 10px;
 }
 
 .olvidarContra {
-    color: #2196F3;
+    color: #4caf50;
     text-align: center;
-
+    padding-top: 10px;
 }
 
 hr {
@@ -121,8 +130,12 @@ hr {
     margin: 16px 0;
 }
 
+ .uno{
+    margin-top: 30px;
+}
+
 .ingresantes {
-    background-color: #3f51b5 !important;
+    background-color: #2196F3 !important;
 }
 
 .dos {
@@ -200,13 +213,15 @@ hr {
 }
 
 footer {
-    background-color: #333;
+    margin: 0%;
+    background-color: #1b1b1b;
     color: #fff;
+    text-align: center;
+    padding: 5px;
 }
 
-footer a{
-    color: #fff;
-    text-decoration: none;
+footer p{
+    margin: 0;
 }
 .navFoot {
     background-color: #616161 !important;
