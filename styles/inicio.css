@@ -79,6 +79,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex: 1;
 
 }
 
@@ -135,10 +136,10 @@ body {
 }
 
 aside {
-    height: 100%;
-    position: fixed;
+ 
     padding: 0;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
     background-color: #262626;
     color: white;
     width: 15.625em;
@@ -155,8 +156,7 @@ aside {
 }
 
 .aside-items li {
-    padding: 0.625em;
-    padding-left: 1.25em;
+   
     padding: 0.625em;
     display: flex;
     padding-left: 1.25em;
@@ -167,15 +167,15 @@ aside {
 
 }
 
-
 .aside-items {
     padding: 0;
-
+    
     padding: 0.625em;
     padding-left: 1.25em;
-
+    
     list-style: none;
 }
+
 
 
 aside h2 {
@@ -223,10 +223,12 @@ main {
 }
 
 .caja-materia {
+    box-sizing: border-box;
     background-color: #4D4C4C;
     border: 1px solid #DBDBDB;
-    padding: 1%;
-    margin: 0;
+    padding: 5%;
+    margin: 5%;
+    gap: 10px;
     height: 100%;
     width: 100%;
 }
@@ -276,7 +278,7 @@ footer {
 }
 
 .pie p {
-    color: #444;
+    color:rgb(143, 143, 143);
     font-size: 0.938em;
     font-weight: bold;
 }
