@@ -7,9 +7,15 @@
 body {
     margin: 0;
     padding: 0;
-
+    color: #121212;
+    background-color: white;
     font-size: small;
+}
+
+.dark-mode {
     background-color: #121212;
+    color: white;
+
 }
 
 .header {
@@ -30,8 +36,7 @@ body {
 }
 
 .header {
-    background-color: #121212;
-    color: white;
+
     box-sizing: border-box;
     padding: 0.188em;
 }
@@ -40,8 +45,22 @@ body {
     margin-top: 0.313em;
     margin-bottom: 0.313em;
     margin-left: 0.313em;
+    display: flex;
+    align-items: center;
+    gap: 0.438em;
+ 
+}
+.logos img{
+    width: 2.5em;
+    height: 2.5em;
 }
 
+.logos p{
+    font-size: 1.25em;
+}
+#logo1{
+    width: 10em;
+}
 .foto-perfil {
     font-weight: bold;
     border-radius: 3.125em;
@@ -146,7 +165,7 @@ aside {
     align-content: flex-start;
     justify-content: flex-start;
     align-items: center;
-    gap:15px;
+    gap: 15px;
 
 }
 
@@ -170,7 +189,7 @@ aside h2 {
 
 main {
     display: flex;
-    background-color: #121212;
+    
 }
 
 .bienvenido {
