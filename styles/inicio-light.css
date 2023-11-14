@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-   
+
     background-color: #ffffff;
     color: rgb(0, 0, 0);
 
@@ -46,19 +46,22 @@ body {
     display: flex;
     align-items: center;
     gap: 0.438em;
- 
+
 }
-.logos img{
+
+.logos img {
     width: 2.5em;
     height: 2.5em;
 }
 
-.logos p{
+.logos p {
     font-size: 1.25em;
 }
-#logo1{
+
+#logo1 {
     width: 10em;
 }
+
 .foto-perfil {
     font-weight: bold;
     border-radius: 3.125em;
@@ -136,7 +139,7 @@ body {
 }
 
 aside {
- 
+
     padding: 0;
     margin: 0;
     padding: 0;
@@ -188,7 +191,7 @@ aside h2 {
 
 main {
     display: flex;
-    
+
 }
 
 .bienvenido {
@@ -225,7 +228,7 @@ main {
 
 .caja-materia {
     box-sizing: border-box;
-  
+
     border: 1px solid #DBDBDB;
     padding: 5%;
     margin: 5%;
@@ -282,4 +285,21 @@ footer {
     color: #707070;
     font-size: 0.938em;
     font-weight: bold;
+}
+
+.boton_ayuda {
+    background-color: #2196f3;
+    border-radius: 31px 32px 0px 0px;
+    position: fixed;
+    top: 661px;
+    bottom: 72px;
+    right: 63px;
+    padding: 22px;
+    text-align: center;
+    color: white
+}
+
+.boton_ayuda:hover{
+    background-color: #1c7dcc;
+    transition-duration: 1s;
 }
