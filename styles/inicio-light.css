@@ -228,13 +228,21 @@ main {
 
 .caja-materia {
     box-sizing: border-box;
-
-    border: 1px solid #DBDBDB;
+    border: 0.13em solid #DBDBDB;
     padding: 5%;
     margin: 5%;
     gap: 10px;
     height: 100%;
     width: 100%;
+}
+
+.caja-materia:hover{
+    border: 0.13em solid #2196f3;
+    transition-duration: 0.5s;
+}
+
+.caja-materia-titulo h5:hover {
+    color:#2196f3;
 }
 
 .caja-materia-titulo {
