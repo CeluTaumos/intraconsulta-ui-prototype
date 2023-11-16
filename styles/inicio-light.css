@@ -294,7 +294,9 @@ main {
     background-color: rgb(64, 169, 229);
 }
 
-
+.menu-hamburguesa{
+  display: none;
+}
 
 hr {
     border-color: #444;
@@ -332,7 +334,26 @@ footer {
     background-color: #1c7dcc;
     transition-duration: 1s;
 }
+#hamburguesa{
+  margin: 0;
+ font-size: 2.5em;
+}
+
+/* RESPONSIVE  */
 @media only screen and (max-width: 600px) {
+  .user{
+    display: none;
+  }
+
+  .menu-hamburguesa{
+    display: flex;
+  }
+.normal{
+  display: none;
+}
+  .w3-sidebar{
+    display: none;
+  }
     body {
       font-size: smaller;
     }
