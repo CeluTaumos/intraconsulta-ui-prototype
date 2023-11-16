@@ -4,7 +4,7 @@
     text-align: center;
 }
 
-.caja-matricula{
+.caja-principal{
     display: flex;flex-direction: column;
     gap: 1.25em;
     margin: 2%;
@@ -14,7 +14,7 @@
     align-content: center;
 }
 
-.cajita-matricula {
+.cajita{
     background-color: #519253;
     width: 60%;
     box-sizing: border-box;
@@ -23,9 +23,9 @@
     font-weight: bold;
     color: white;
     font-size: 1.25em;
-    margin: 2%;
+    
 }
-.caja-matricula :hover{
+.caja-principal :hover{
     background-color: #2196f3;
     transition: 0.5s;
 }
