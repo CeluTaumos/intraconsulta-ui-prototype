@@ -48,7 +48,9 @@ body {
     gap: 0.438em;
 
 }
-
+.logoAlt{
+  display: none;
+}
 .logos img {
     width: 2.5em;
     height: 2.5em;
@@ -317,3 +319,149 @@ footer {
     background-color: #1c7dcc;
     transition-duration: 1s;
 }
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: smaller;
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+  }
+  #logo1{display: none;}
+    .logos {
+      flex-direction: row;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    }
+  
+    .logos img {
+      width: 10%;
+      height: auto;
+    }
+  
+    .logos p {
+     display: none;
+    }
+  .logoAlt{
+    display: block;
+    width: 20%;
+    text-align: center;
+  }
+    .user {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .foto-perfil {
+      margin: 0.313em 0;
+    }
+  
+    .nombre {
+      text-align: center;
+    }
+  
+    .menu {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .menu div {
+      margin: 0.313em 0;
+    }
+  
+    .aside {
+      width: 100%;
+    }
+  
+    .aside h2 {
+      text-align: center;
+    }
+  
+    .aside-items li {
+      padding: 0.313em;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .bienvenido {
+      padding: 1em;
+    }
+  
+    .caja-herramientas {
+      grid-template-columns: 1fr;
+      gap: 1em;
+    }
+  
+    .caja-materia {
+      width: 100%;
+      margin: 2% 0;
+    }
+  
+    #tools {
+      width: 0.938em;
+      height: 0.938em;
+    }
+  
+    footer {
+      flex-direction: column;
+    }
+  }
+
+  /* ESTILOS CELULAR */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .header {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+  }
+    .logos img {
+      width: 20%;
+      height: auto;
+    }
+    .logoAlt{
+      display: block;
+      width: 20%;
+      text-align: center;
+    }
+    .logos p {
+      font-size: 1.2em;
+    }
+    #logo1{display: none;}
+  
+    .menu a {
+      padding: 1em;
+    }
+  
+    .aside {
+      width: 25%;
+    }
+  
+    .bienvenido {
+      padding: 2em;
+    }
+  
+    .caja-herramientas {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2em;
+    }
+  
+    .caja-materia {
+      margin: 2%;
+    }
+  
+    #tools {
+      width: 1.563em;
+      height: 1.563em;
+    }
+  
+    footer {
+      flex-direction: row;
+    }
+  }
