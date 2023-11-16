@@ -212,7 +212,7 @@ main {
 
 .caja-herramientas {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 1.25em;
     margin: 2%;
@@ -227,15 +227,15 @@ main {
     background-color: #4D4C4C;
     border: 1px solid #DBDBDB;
     padding: 5%;
-    margin: 5%;
-    gap: 10px;
+    margin: 2%;
     height: 100%;
     width: 100%;
+    font-size: medium;
 }
 
 .caja-materia-titulo {
     display: flex;
-    font-size: 1.25em;
+    font-size: 2em;
     justify-content: flex-start;
     align-items: center;
     gap: 0.438em;

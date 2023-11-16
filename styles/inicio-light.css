@@ -216,7 +216,7 @@ main {
 
 .caja-herramientas {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 1.25em;
     margin: 2%;
@@ -228,14 +228,20 @@ main {
 
 .caja-materia {
     box-sizing: border-box;
-    border: 0.13em solid #DBDBDB;
+    border: 0.13em solid #b3b3b3;
     padding: 5%;
     margin: 5%;
-    gap: 10px;
+    font-size: medium;
     height: 100%;
     width: 100%;
 }
-
+.caja-materia-titulo {
+    display: flex;
+    font-size: 2em;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.438em;
+}
 .caja-materia:hover{
     border: 0.13em solid #2196f3;
     transition-duration: 0.5s;
