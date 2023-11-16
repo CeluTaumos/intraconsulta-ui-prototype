@@ -181,6 +181,19 @@ aside {
     list-style: none;
 }
 
+.caja-aside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linea_aside{
+    margin: 0 auto;
+    border-style: solid;
+    border-color: #3f3737;
+}
+
 
 aside h2 {
     margin: 0;
