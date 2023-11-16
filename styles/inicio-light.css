@@ -261,7 +261,10 @@ main {
     border: 0.13em solid #2196f3;
     transition-duration: 0.5s;
 }
-
+.caja-materia a{
+  text-decoration: none;
+  color: black;
+}
 .caja-materia-titulo h5:hover {
     color:#2196f3;
 }

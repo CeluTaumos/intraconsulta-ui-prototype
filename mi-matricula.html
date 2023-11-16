@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/inicio-light.css">
+    <link rel="stylesheet" href="styles/mi-matri.css">
     <a href="https://www.w3schools.com/"></a>
 
     <script src="https://kit.fontawesome.com/bbc4ebec2d.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon"
         href="https://miel.unlam.edu.ar/vista/imagenes/favicons/android-icon-192x192.png?2023.1.0">
-    <title>Intraconsulta</title>
+    <title>Intraconsulta </title>
 </head>
 
-<body class="dark-mode">
+<body >
     <header>
         <!-- HEADER -->
         <div class="header">
@@ -59,14 +60,16 @@
                 <a href="inicio.html" class="sun"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></a>
             </div>
             <span title="open Sidebar" style="display: inline-block;" id="openNav"
-            class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()"><p id="">☰</p></span>
+                class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()">
+                <p id="">☰</p>
+            </span>
 
             <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar">
                 <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">X &times;</button>
                 <a href="#" class="w3-bar-item w3-button">Mi perfil</a>
                 <a href="#" class="w3-bar-item w3-button">Ayuda</a>
                 <a href="#" class="w3-bar-item w3-button">Cerrar Sesion</a>
-                <!-- CAMBIAR A DARKMODE Y NOTI -->
+            
             </div>
         </div>
     </header>
@@ -94,45 +97,21 @@
 
         <!-- CUERPO -->
         <section class="bienvenido">
-            <div class="bienvenido-materias">
-                <h2 id="tituloBien">Bienvenido APELLIDO NOMBRE. Tu estado actual es: <span
-                        id="activo">Activo</span></h2>
+            <div class="titulo">
+                <h2 >Mi matricula</h2>
             </div>
-            <!-- CAJAS HERRAMIENTAS  -->
-            <section class="caja-herramientas">
-
-
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <img src="img/tools/inscripciones.svg" alt="inscripciones imagen" id="tools">
-                        <h5>Inscripciones</h5>
-                    </div>
-                    <p>Inscribite a materias y finales y realiza las verificaciones.</p>
+            <!-- CAJAS MATRICULA  -->
+            <section class="caja-matricula">
+                <div class="cajita-matricula">
+                    <p>Materias en curso</p>
+                </div>
+                <div class="cajita-matricula">
+                    <p>Materias Pendientes de final</p>
+                </div>
+                <div class="cajita-matricula">
+                    <p>Historia Académica</p>
                 </div>
 
-
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <img src="img/tools/matricula.svg" alt="matricula imagen" id="tools">
-                      <a href="mi-matricula.html"> <h5>Mi matricula</h5></a> 
-                    </div>
-                    <p>Accedé a tu historia académica y tus materias en curso.</p>
-                </div>
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-
-                        <img src="img/tools/cuotas.svg" alt="cuotas imagen" id="tools">
-                        <h5>Pagos</h5>
-                    </div>
-                    <p>Accedé al portal de pagos.</p>
-                </div>
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <img src="img/tools/tramites_online 1.svg" alt="tramites imagen" id="tools">
-                        <h5>Trámites online</h5>
-                    </div>
-                    <p>Solicitudes, constancias, certificados y otras consultas.</p>
-                </div>
 
 
             </section>
