@@ -18,7 +18,7 @@
         <!-- HEADER -->
         <div class="header">
             <div class="logos">
-               <a href="inicio-light.html"><img src="img/unlam-light.png" alt="logo1" id="logo1"></a> 
+                <a href="inicio-light.html"><img src="img/unlam-light.png" alt="logo1" id="logo1"></a>
                 <img src="img/unlam-logo-grafico-solo.png" alt="logoAlt">
                 <img src="./img/intraconsulta.png" alt="logo intraconsulta">
                 <p>Intraconsulta</p>
@@ -41,10 +41,10 @@
 
         <!-- MENU -->
         <div class="menu normal">
-            <div>
+            <div class="casa_migas_de_pan">
                 <a href="inicio-light.html"><i class="fa-solid fa-house fa-xl"></i></a>
+                <p>Home</p>
             </div>
-
             <!-- CAMBIAR A DARKMODE Y NOTI -->
             <div class="centrar">
                 <img src="img/notification (1).png" alt="logo intraonsulta" id="campanita">
@@ -59,7 +59,9 @@
                 <a href="inicio-light.html" class="sun"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></a>
             </div>
             <span title="open Sidebar" style="display: inline-block;" id="openNav"
-            class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()"><p id="">☰</p></span>
+                class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()">
+                <p id="">☰</p>
+            </span>
 
             <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar">
                 <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">X &times;</button>
@@ -95,8 +97,8 @@
         <!-- CUERPO -->
         <section class="bienvenido">
             <div class="bienvenido-materias">
-                <h2 id="tituloBien">Bienvenido APELLIDO NOMBRE. Tu estado actual es: <span
-                        id="activo">Activo</span></h2>
+                <h2 id="tituloBien">Bienvenido APELLIDO NOMBRE. Tu estado actual es: <span id="activo">Activo</span>
+                </h2>
             </div>
             <!-- CAJAS HERRAMIENTAS  -->
             <section class="caja-herramientas">
@@ -105,7 +107,9 @@
                 <div class="w3-card caja-materia">
                     <div class="caja-materia-titulo">
                         <img src="img/tools/inscripciones.svg" alt="inscripciones imagen" id="tools">
-                        <a href="inscripciones.html"> <h5>Inscripciones</h5></a> 
+                        <a href="inscripciones.html">
+                            <h5>Inscripciones</h5>
+                        </a>
                     </div>
                     <p>Inscribite a materias y finales y realiza las verificaciones.</p>
                 </div>
@@ -114,7 +118,9 @@
                 <div class="w3-card caja-materia">
                     <div class="caja-materia-titulo">
                         <img src="img/tools/matricula.svg" alt="matricula imagen" id="tools">
-                      <a href="mi-matricula.html"> <h5>Mi matricula</h5></a> 
+                        <a href="mi-matricula.html">
+                            <h5>Mi matricula</h5>
+                        </a>
                     </div>
                     <p>Accedé a tu historia académica y tus materias en curso.</p>
                 </div>
@@ -136,21 +142,21 @@
 
 
             </section>
-            </section>
-            </main>
-            <footer class="pie">
-                <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
-            </footer>
-            <script>
-                function w3_open() {
-                    document.getElementById("mySidebar").style.width = "100%";
-                    document.getElementById("mySidebar").style.display = "block";
-                }
+        </section>
+    </main>
+    <footer class="pie">
+        <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
+    </footer>
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
 
-                function w3_close() {
-                    document.getElementById("mySidebar").style.display = "none";
-                }
-            </script>
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
