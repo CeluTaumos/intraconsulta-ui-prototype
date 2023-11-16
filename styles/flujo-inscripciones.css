@@ -1,0 +1,36 @@
+.centrar-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mensaje-boton{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 200px;
+    font-size: large;
+    margin-top: 20px;
+}
+
+.boton-ir-inscripcion{
+    color: white;
+    background-color: #2196F3;
+    box-sizing: border-box;
+    width: 200px;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.boton-ir-inscripcion:hover{
+   background-color: #165e9a;
+}
+
+.mensaje-sin-materias{
+    font-size: large;
+    color: rgb(104, 104, 104);
+    font-style: italic;
+}
