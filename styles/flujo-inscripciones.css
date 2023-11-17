@@ -1,11 +1,11 @@
-.centrar-vertical{
+.centrar-vertical {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.mensaje-boton{
+.mensaje-boton {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -14,7 +14,7 @@
     margin-top: 20px;
 }
 
-.boton-ir-inscripcion{
+.boton-ir-inscripcion {
     color: white;
     background-color: #2196F3;
     box-sizing: border-box;
@@ -25,18 +25,128 @@
     font-size: medium;
 }
 
-.boton-ir-inscripcion:hover{
-   background-color: #165e9a;
+.boton-ir-inscripcion:hover {
+    background-color: #165e9a;
 }
 
-.mensaje-sin-materias{
+.mensaje-sin-materias {
     font-size: large;
     color: rgb(104, 104, 104);
     font-style: italic;
 }
 
-.mensaje-con-materias{
+.mensaje-con-materias {
     font-size: large;
     color: #4CAF50;
     font-style: italic;
+}
+
+table {
+    margin: 20px auto;
+    width: auto;
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    border: 2px solid #ffffff;
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+    /* Evita que el texto se divida en múltiples líneas */
+    text-align: center;
+    width: 120px;
+}
+
+td {
+    background-color: #DBDBDB;
+}
+
+th {
+    background-color: #B8B6B6;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.3);
+}
+
+/* Estilos del botón */
+.comenzar-btn {
+    width: 20em;
+    /* Ancho de 100px en unidades em */
+    background-color: #4CAF50;
+    /* Verde */
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    /*  position: relative; /* Añadido para el centrado */
+}
+
+/* Estilos del popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo oscuro */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    width: 600px;
+    height: 500px;
+    font-size:medium;
+}
+
+.popup-buttons {
+    margin-top: 20px;
+}
+
+/* Estilos de los botones del popup */
+.popup-btn {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    width: 200px;
+}
+
+.popup-btn-aceptar {
+    background-color: #4CAF50;
+    /* Verde */
+    color: white;
+}
+
+.popup-btn-cancelar {
+    background-color: #808080;
+    /* Gris */
+    color: white;
+}
+
+.bienvenido {
+    text-align: center;
 }

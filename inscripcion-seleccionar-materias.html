@@ -100,27 +100,61 @@
         <section class="bienvenido">
             <div class="titulo">
                 <h2>Inscripcion a Materias</h2>
+                <p>Usted esta a punto de inscribirse a materias para la carrera:</p>
             </div>
             <!-- centrar contenido -->
-            <table>
+            <!-- Agrega la clase w3-table-all a la tabla para hacerla responsive -->
+            <table class="w3-table-all">
                 <thead>
-                  <tr>
-                    <th>Código</th>
-                    <th>Carrera</th>
-                    <th>Plan</th>
-                    <th>Seleccionar</th>
-                  </tr>
+                    <tr>
+                        <th>Código</th>
+                        <th>Carrera</th>
+                        <th>Plan</th>
+                        <th>Seleccionar</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>00</td>
-                    <td>Nombre</td>
-                    <td>00</td>
-                    <td><input type="checkbox"></td>
-                  </tr>
+                    <tr>
+                        <td>00</td>
+                        <td>Nombre</td>
+                        <td>00</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>00</td>
+                        <td>Nombre</td>
+                        <td>00</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
                 </tbody>
-              </table>
+            </table>
+            <button class="w3-button comenzar-btn" onclick="mostrarPopup()">Comenzar</button>
         </section>
+
+
+        <!-- Popup -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>PARA EMPEZAR LA INSCRIPCION, PRIMERO ACEPTE
+                    LOS TERMINOS Y CONDICIONES</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cumque, recusandae
+                    exercitationem ipsam unde deserunt earum sit facilis inventore quis veniam ducimus laudantium neque,
+                    itaque assumenda ad perspiciatis odit quo?. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus fugiat quam voluptas, numquam aliquam magnam, maiores distinctio sed cumque odio dicta,
+                    est obcaecati voluptatum praesentium quibusdam assumenda in modi impedit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Praesentium voluptatum ab vel assumenda accusantium magnam deserunt
+                    est inventore nobis. Enim beatae illum asperiores corrupti? Exercitationem vel dolor doloribus
+                    excepturi placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. At maiores, rem,
+                    aliquam iure iste in commodi ducimus quidem necessitatibus omnis explicabo, veniam a similique quo
+                    voluptatum! Temporibus eius quos et?
+                </p>
+                <div class="popup-buttons">
+                    <button class="w3-button popup-btn popup-btn-aceptar" onclick="aceptarPopup()">Aceptar</button>
+                    <button class="w3-button popup-btn popup-btn-cancelar" onclick="cancelarPopup()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
@@ -135,6 +169,27 @@
 
         function w3_close() {
             document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+    <script>
+        // Función para mostrar el popup
+        function mostrarPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        // Función para aceptar el popup
+        function aceptarPopup() {
+            window.location.href = 'inscripcion-finalizada.html';
+        }
+
+        // Función para cancelar el popup
+        function cancelarPopup() {
+            cerrarPopup();
+        }
+
+        // Función para cerrar el popup
+        function cerrarPopup() {
+            document.getElementById("popup").style.display = "none";
         }
     </script>
 </body>
