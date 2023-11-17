@@ -13,7 +13,7 @@
     <title>Intraconsulta</title>
 </head>
 
-<body class="dark-mode">
+<body>
     <header>
         <!-- HEADER -->
         <div class="header">
@@ -47,7 +47,8 @@
             </div>
             <!-- CAMBIAR A DARKMODE Y NOTI -->
             <div class="centrar">
-                <img src="img/notification (1).png" alt="logo intraonsulta" id="campanita">
+                <img src="img/notification (1).png" alt="logo intraconsulta" id="campanita" onclick="showPopup()">
+
                 <a href="inicio-light.html" class="sun"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></a>
             </div>
         </div>
@@ -71,8 +72,32 @@
                 <!-- CAMBIAR A DARKMODE Y NOTI -->
             </div>
         </div>
+        <!-- Popup container -->
+        <div id="popupContainer" class="popup-container">
+            <div class="popup-content popoup">
+                <!-- Contenido del popup -->
+                <!-- Botón de cierre -->
+                <a href="javascript:void(0);" class="close-popup" onclick="closePopup()">&times;</a>
+                <h3>Notificaciones y Novedades</h3>
+                <div class="popup-cajitaa">
+                    <div class="popup-cajita">
+                        <h4>Ya se encuentran disponibles las inscripciones.</h4>
+                        <p>publicado el 5/11/2023.</p>
+                    </div>
+                    <a href="" class="btn">inscribirse</a>
+                </div>
+                <div class="popup-cajita">
+
+                    <h4>Nueva interfaz de intraconsulta.</h4>
+                    <p>Publicado el 3/11/2023.</p>
+
+                </div>
+            </div>
+        </div>
     </header>
     <main>
+
+
         <!-- ASIDE-->
         <aside>
             <div class="caja-aside">
@@ -159,7 +184,27 @@
         function w3_close() {
             document.getElementById("mySidebar").style.display = "none";
         }
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        // Función para mostrar el popup
+        function showPopup() {
+            document.getElementById("popupContainer").style.display = "flex";
+        }
+
+        // Función para cerrar el popup
+        function closePopup() {
+            document.getElementById("popupContainer").style.display = "none";
+        }
     </script>
+
 </body>
 
 </html>
