@@ -34,3 +34,9 @@
     color: rgb(104, 104, 104);
     font-style: italic;
 }
+
+.mensaje-con-materias{
+    font-size: large;
+    color: #4CAF50;
+    font-style: italic;
+}

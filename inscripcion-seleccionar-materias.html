@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/inicio-light.css">
+    <link rel="stylesheet" href="styles/generales.css">
+    <a href="https://www.w3schools.com/"></a>
+    <link rel="stylesheet" href="styles/flujo-inscripciones.css">
+
+    <script src="https://kit.fontawesome.com/bbc4ebec2d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon"
+        href="https://miel.unlam.edu.ar/vista/imagenes/favicons/android-icon-192x192.png?2023.1.0">
+    <title>Intraconsulta </title>
+</head>
+
+<body>
+    <header>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="logos">
+                <a href="inicio-light.html"><img src="img/unlam-light.png" alt="logo1" id="logo1"></a>
+                <img src="img/unlam-logo-grafico-solo.png" alt="logoAlt">
+                <img src="./img/intraconsulta.png" alt="logo intraconsulta">
+                <p>Intraconsulta</p>
+            </div>
+            <div class="user">
+                <div class="datosUsuario">
+                    <p class="nombre">APELLIDO, NOMBRE</p>
+                    <br>
+                    <div class="links">
+                        <a href="">Mi Perfil</a>
+                        •
+                        <a href="">Ayuda</a>
+                        •
+                        <a href="">Cerrar Sesión</a>
+                    </div>
+                </div>
+                <img src="img/foto_perfil.jpg" class="foto-perfil" alt="foto_perfil" height="40px" width="40px">
+            </div>
+        </div>
+
+        <!-- MENU -->
+        <div class="menu normal">
+            <div>
+                <a href="inicio-light.html"><i class="fa-solid fa-house fa-xl"></i></a>
+            </div>
+
+            <!-- CAMBIAR A DARKMODE Y NOTI -->
+            <div class="centrar">
+                <img src="img/notification (1).png" alt="logo intraonsulta" id="campanita">
+                <a href="inicio.html" class="sun"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></a>
+            </div>
+        </div>
+
+        <!-- MENU HAMBURGUESA -->
+        <div class="menu menu-hamburguesa">
+            <div class="centrar">
+                <img src="img/notification (1).png" alt="logo intraonsulta" id="campanita">
+                <a href="inicio.html" class="sun"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></a>
+            </div>
+            <span title="open Sidebar" style="display: inline-block;" id="openNav"
+                class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()">
+                <p id="">☰</p>
+            </span>
+
+            <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar">
+                <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">X &times;</button>
+                <a href="#" class="w3-bar-item w3-button">Mi perfil</a>
+                <a href="#" class="w3-bar-item w3-button">Ayuda</a>
+                <a href="#" class="w3-bar-item w3-button">Cerrar Sesion</a>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- ASIDE-->
+        <aside>
+            <div class="caja-aside">
+                <h2>Herramientas</h2>
+                <ul class="aside-items">
+                    <li><img src="./img/tools/officewhite-removebg-preview.png" alt="microsoft office logo" id="office"
+                            width="24" height="24">Cuenta Office 365 </li>
+                    <li> <img src="./img/tools/phone.svg" alt="telefono imagen">Descargar App </li>
+                </ul>
+                <hr class="linea_aside">
+                <h2>Otras operaciones</h2>
+                <ul class="aside-items">
+                    <li><img src="./img/tools/biblioteca_digital.svg" alt="biblioteca digital logo"
+                            id="biblioteca_digital" width="24" height="24">Biblioteca digital</li>
+                    <li><img src="./img/tools/contacto.svg" alt="contacto logo" id="contacto_logo" width="24"
+                            height="24">Contacto</li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- CUERPO -->
+        <section class="bienvenido">
+            <div class="titulo">
+                <h2>Inscripcion a Materias</h2>
+            </div>
+            <!-- centrar contenido -->
+            <table>
+                <thead>
+                  <tr>
+                    <th>Código</th>
+                    <th>Carrera</th>
+                    <th>Plan</th>
+                    <th>Seleccionar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>00</td>
+                    <td>Nombre</td>
+                    <td>00</td>
+                    <td><input type="checkbox"></td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+    </main>
+
+
+    <footer class="pie">
+        <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
+    </footer>
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
