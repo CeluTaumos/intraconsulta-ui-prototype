@@ -103,13 +103,62 @@
             </div>
             <!-- centrar contenido -->
             <div class="centrar-vertical">
-                <a class="mensaje-con-materias" href="inscripcion-inicio-popup.html">Consultar materias en las que estoy inscripto</a>
+                <a class="mensaje-con-materias" href="#" onclick="mostrarPopup()">Consultar materias en las que estoy
+                    inscripto</a>
                 <div class="mensaje-boton">
                     <p>Inscripcion a materias:</p>
-                    <a href="#" class="boton-ir-inscripcion">Ir a la inscripcion</a>
+                    <a href="inscripcion-seleccionar-carrera.html" class="boton-ir-inscripcion">Ir a la inscripcion</a>
                 </div>
             </div>
         </section>
+
+        <!-- Popup -->
+        <div id="popup" class="popup">
+            <div class="popup-content" id="popupConf">
+                <a href="#" class="salir" onclick="cerrarPopup()"><i class="fa-solid fa-x"></i></a>
+                <h2 class="conf-mat">USTED ESTA INSCRIPTO EN LAS SIGUIENTES MATERIAS:</h2>
+                <table class="w3-table-all">
+                    <thead>
+                        <tr>
+                            <th>Carrera</th>
+                            <th>Código</th>
+                            <th>Materia</th>
+                            <th>Comision</th>
+                            <th>Periodo</th>
+                            <th>Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>Nombre Materia</td>
+                            <td>Nro Comision</td>
+                            <td>1er Cuatrimestre</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>Nombre Materia</td>
+                            <td>Nro Comision</td>
+                            <td>1er Cuatrimestre</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>Nombre Materia</td>
+                            <td>Nro Comision</td>
+                            <td>1er Cuatrimestre</td>
+                            <td>--</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a href="#" class="conf-mat">descargar el comprobante aqui</a>
+            </div>
+        </div>
     </main>
 
 
@@ -124,6 +173,27 @@
 
         function w3_close() {
             document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+    <script>
+        // Función para mostrar el popup
+        function mostrarPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        // Función para aceptar el popup
+        function aceptarPopup() {
+            window.location.href = 'inscripcion-finalizar.html';
+        }
+
+        // Función para cancelar el popup
+        function cancelarPopup() {
+            cerrarPopup();
+        }
+
+        // Función para cerrar el popup
+        function cerrarPopup() {
+            document.getElementById("popup").style.display = "none";
         }
     </script>
 </body>
