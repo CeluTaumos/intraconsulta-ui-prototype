@@ -100,100 +100,53 @@
         <section class="bienvenido">
             <div class="titulo">
                 <h2>Inscripcion a Materias</h2>
-                <p>Plan de estudios: <span class="plan-est">NOMBRE CARRERA NRO PLAN</span></p>
+                <p class="msj-confirmacion"><i class="fa-regular fa-circle-check"></i> Usted se a inscripto a las siguiente materias:</p>
             </div>
             <!-- centrar contenido -->
             <!-- Agrega la clase w3-table-all a la tabla para hacerla responsive -->
             <table class="w3-table-all">
                 <thead>
                     <tr>
+                        <th>Carrera</th>
                         <th>Código</th>
                         <th>Materia</th>
-                        <th>Comision/dia/modalidad</th>
-                        <th>Agregar/quitar</th>
-                        <th>Condicion</th>
+                        <th>Comision</th>
+                        <th>Periodo</th>
+                        <th>Pago</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>00</td>
-                        <td>Nombre materia</td>
-                        <td><select name="" id="">
-                                <option value="">001/LuMa 8a12/virtual</option>
-                                <option value="">002/MaSa 14a18/virtual</option>
-                            </select></td>
-                        <td><input type="checkbox"></td>
-                        <td>Puede promocionar</td>
+                        <td>00</td>
+                        <td>Nombre Materia</td>
+                        <td>Nro Comision</td>
+                        <td>1er Cuatrimestre</td>
+                        <td>--</td>
                     </tr>
                     <tr>
                         <td>00</td>
-                        <td>Nombre materia</td>
-                        <td><select name="" id="">
-                                <option value="">001/LuMa 8a12/virtual</option>
-                                <option value="">002/MaSa 14a18/virtual</option>
-                            </select></td>
-                        <td><input type="checkbox"></td>
-                        <td>Adeuda final</td>
+                        <td>00</td>
+                        <td>Nombre Materia</td>
+                        <td>Nro Comision</td>
+                        <td>1er Cuatrimestre</td>
+                        <td>--</td>
                     </tr>
                     <tr>
                         <td>00</td>
-                        <td>Nombre materia</td>
-                        <td><select name="" id="">
-                                <option value="">001/LuMa 8a12/virtual</option>
-                                <option value="">002/MaSa 14a18/virtual</option>
-                            </select></td>
-                        <td><input type="checkbox"></td>
-                        <td>Puede promocionar</td>
+                        <td>00</td>
+                        <td>Nombre Materia</td>
+                        <td>Nro Comision</td>
+                        <td>1er Cuatrimestre</td>
+                        <td>--</td>
                     </tr>
                 </tbody>
             </table>
-            <button class="w3-button aceptar-btn" onclick="mostrarPopup()">Aceptar</button>
+            <p class="comp">en caso de solicitar reclamos, puede <a href="#">descargar el comprobante aqui</a></p>
+            <button class="w3-button comenzar-btn" onclick="volver()">Finalizar</button>
         </section>
 
 
-        <!-- Popup -->
-        <div id="popup" class="popup">
-            <div class="popup-content" id="popupConf">
-                <h2 class="conf-mat">USTED A SELECCIONADO LAS SIGUIENTES MATERIAS:</h2>
-                <table class="w3-table-all">
-                    <thead>
-                        <tr>
-                            <th>Código</th>
-                            <th>Materia</th>
-                            <th>Comision/dia/modalidad</th>
-                            <th>Condicion</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>00</td>
-                            <td>Nombre materia</td>
-                            <td>001/LuMa 8a12/virtual</td>
-
-                            <td>Puede promocionar</td>
-                        </tr>
-                        <tr>
-                            <td>00</td>
-                            <td>Nombre materia</td>
-                            <td>001/LuMa 8a12/virtual</td>
-                            <td>Adeuda final</td>
-                        </tr>
-                        <tr>
-                            <td>00</td>
-                            <td>Nombre materia</td>
-                            <td>001/LuMa 8a12/virtual</td>
-                            <td>Puede promocionar</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-                <div class="popup-buttons">
-                    <button class="w3-button popup-btn popup-btn-aceptar" onclick="aceptarPopup()"><i class="fa-solid fa-check"></i> Ok</button>
-                    <button class="w3-button popup-btn popup-btn-aceptar" onclick="cancelarPopup()"><i class="fa-solid fa-pencil"></i> editar</button>
-                </div>
-            </div>
-        </div>
 
     </main>
 
@@ -212,24 +165,10 @@
         }
     </script>
     <script>
-        // Función para mostrar el popup
-        function mostrarPopup() {
-            document.getElementById("popup").style.display = "block";
-        }
-
+       
         // Función para aceptar el popup
-        function aceptarPopup() {
-            window.location.href = 'inscripcion-finalizar.html';
-        }
-
-        // Función para cancelar el popup
-        function cancelarPopup() {
-            cerrarPopup();
-        }
-
-        // Función para cerrar el popup
-        function cerrarPopup() {
-            document.getElementById("popup").style.display = "none";
+        function volver() {
+            window.location.href = 'inicio-light.html';
         }
     </script>
 </body>

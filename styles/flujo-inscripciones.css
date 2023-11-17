@@ -150,3 +150,48 @@ input[type="checkbox"] {
 .bienvenido {
     text-align: center;
 }
+
+.plan-est{
+    color: #2196F3;
+}
+
+.aceptar-btn{
+    width: 20em;
+    /* Ancho de 100px en unidades em */
+    background-color: #2196F3;
+    /* Verde */
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    /*  position: relative; /* Añadido para el centrado */
+}
+
+#popupConf{
+    width: 60%;
+    height: 60%;
+}
+
+.conf-mat{
+    color: #2196F3;
+}
+
+.msj-confirmacion{
+font-weight: bold;
+font-size: large;
+}
+
+.comp{
+    font-size: large;
+    font-style: italic;
+}
+
+.comp a{
+    color: #2196F3;
+}

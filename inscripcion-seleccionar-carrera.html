@@ -100,7 +100,7 @@
         <section class="bienvenido">
             <div class="titulo">
                 <h2>Inscripcion a Materias</h2>
-                <p>Plan de estudios: <span class="plan-est">NOMBRE CARRERA NRO PLAN</span></p>
+                <p>Usted esta a punto de inscribirse a materias para la carrera:</p>
             </div>
             <!-- centrar contenido -->
             <!-- Agrega la clase w3-table-all a la tabla para hacerla responsive -->
@@ -108,89 +108,49 @@
                 <thead>
                     <tr>
                         <th>Código</th>
-                        <th>Materia</th>
-                        <th>Comision/dia/modalidad</th>
-                        <th>Agregar/quitar</th>
-                        <th>Condicion</th>
+                        <th>Carrera</th>
+                        <th>Plan</th>
+                        <th>Seleccionar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>00</td>
-                        <td>Nombre materia</td>
-                        <td><select name="" id="">
-                                <option value="">001/LuMa 8a12/virtual</option>
-                                <option value="">002/MaSa 14a18/virtual</option>
-                            </select></td>
+                        <td>Nombre</td>
+                        <td>00</td>
                         <td><input type="checkbox"></td>
-                        <td>Puede promocionar</td>
                     </tr>
                     <tr>
                         <td>00</td>
-                        <td>Nombre materia</td>
-                        <td><select name="" id="">
-                                <option value="">001/LuMa 8a12/virtual</option>
-                                <option value="">002/MaSa 14a18/virtual</option>
-                            </select></td>
-                        <td><input type="checkbox"></td>
-                        <td>Adeuda final</td>
-                    </tr>
-                    <tr>
+                        <td>Nombre</td>
                         <td>00</td>
-                        <td>Nombre materia</td>
-                        <td><select name="" id="">
-                                <option value="">001/LuMa 8a12/virtual</option>
-                                <option value="">002/MaSa 14a18/virtual</option>
-                            </select></td>
                         <td><input type="checkbox"></td>
-                        <td>Puede promocionar</td>
                     </tr>
                 </tbody>
             </table>
-            <button class="w3-button aceptar-btn" onclick="mostrarPopup()">Aceptar</button>
+            <button class="w3-button comenzar-btn" onclick="mostrarPopup()">Comenzar</button>
         </section>
 
 
         <!-- Popup -->
         <div id="popup" class="popup">
-            <div class="popup-content" id="popupConf">
-                <h2 class="conf-mat">USTED A SELECCIONADO LAS SIGUIENTES MATERIAS:</h2>
-                <table class="w3-table-all">
-                    <thead>
-                        <tr>
-                            <th>Código</th>
-                            <th>Materia</th>
-                            <th>Comision/dia/modalidad</th>
-                            <th>Condicion</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>00</td>
-                            <td>Nombre materia</td>
-                            <td>001/LuMa 8a12/virtual</td>
-
-                            <td>Puede promocionar</td>
-                        </tr>
-                        <tr>
-                            <td>00</td>
-                            <td>Nombre materia</td>
-                            <td>001/LuMa 8a12/virtual</td>
-                            <td>Adeuda final</td>
-                        </tr>
-                        <tr>
-                            <td>00</td>
-                            <td>Nombre materia</td>
-                            <td>001/LuMa 8a12/virtual</td>
-                            <td>Puede promocionar</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
+            <div class="popup-content">
+                <h2>PARA EMPEZAR LA INSCRIPCION, PRIMERO ACEPTE
+                    LOS TERMINOS Y CONDICIONES</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cumque, recusandae
+                    exercitationem ipsam unde deserunt earum sit facilis inventore quis veniam ducimus laudantium neque,
+                    itaque assumenda ad perspiciatis odit quo?. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus fugiat quam voluptas, numquam aliquam magnam, maiores distinctio sed cumque odio dicta,
+                    est obcaecati voluptatum praesentium quibusdam assumenda in modi impedit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Praesentium voluptatum ab vel assumenda accusantium magnam deserunt
+                    est inventore nobis. Enim beatae illum asperiores corrupti? Exercitationem vel dolor doloribus
+                    excepturi placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. At maiores, rem,
+                    aliquam iure iste in commodi ducimus quidem necessitatibus omnis explicabo, veniam a similique quo
+                    voluptatum! Temporibus eius quos et?
+                </p>
                 <div class="popup-buttons">
-                    <button class="w3-button popup-btn popup-btn-aceptar" onclick="aceptarPopup()"><i class="fa-solid fa-check"></i> Ok</button>
-                    <button class="w3-button popup-btn popup-btn-aceptar" onclick="cancelarPopup()"><i class="fa-solid fa-pencil"></i> editar</button>
+                    <button class="w3-button popup-btn popup-btn-aceptar" onclick="aceptarPopup()">Aceptar</button>
+                    <button class="w3-button popup-btn popup-btn-cancelar" onclick="cancelarPopup()">Cancelar</button>
                 </div>
             </div>
         </div>
@@ -219,7 +179,7 @@
 
         // Función para aceptar el popup
         function aceptarPopup() {
-            window.location.href = 'inscripcion-finalizar.html';
+            window.location.href = 'inscripcion-seleccionar-materias.html';
         }
 
         // Función para cancelar el popup
