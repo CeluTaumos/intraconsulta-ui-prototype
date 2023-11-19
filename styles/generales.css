@@ -58,3 +58,7 @@ h2 {
 footer{
     color: rgb(160, 160, 160);
 }
+
+main{
+    height: 800px;
+}
