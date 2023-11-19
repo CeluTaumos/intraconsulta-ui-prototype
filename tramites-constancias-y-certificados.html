@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/generales.css">
     <link rel="stylesheet" href="styles/tramites.css">
     <a href="https://www.w3schools.com/"></a>
+    <link rel="stylesheet" href="js/tramites-dropdown.js">
 
     <script src="https://kit.fontawesome.com/bbc4ebec2d.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon"
@@ -15,7 +16,7 @@
     <title>Intraconsulta</title>
 </head>
 
-<body class="dark-mode">
+<body>
     <header>
         <!-- HEADER -->
         <div class="header">
@@ -95,64 +96,27 @@
             </div>
 
         </aside>
-
         <!-- CUERPO -->
         <section class="bienvenido">
             <div class="titulo">
-                <h2>Trámites online</h2>
+                <h2>Constancias y certificados</h2>
             </div>
-            <!-- CAJA TRAMITES  -->
-            <section class="caja-tramites">
-
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                            <h5>Solicitudes</h5>
-                        </a>
+            <!-- CAJA CONSTANCIAS Y CERTIFICADOS  -->
+            <div class="seleccion-de-constancia">
+                <h3>Seleccione la constancia que desea tramitar: </h3>
+                <div class="w3-dropdown-click">
+                    <button onclick="toggleDropdown()" class="w3-button w3-black">Opciones <span
+                            id="arrow">&#9660;</span></button>
+                    <div id="myDropdown" class="w3-dropdown-content w3-bar-block w3-border w3-hide">
+                        <a href="#" class="w3-bar-item w3-button">Alumno regular</a>
+                        <a href="#" class="w3-bar-item w3-button">Materias aprobadas</a>
+                        <a href="#" class="w3-bar-item w3-button">Título en trámite</a>
+                        <a href="#" class="w3-bar-item w3-button">Examen final</a>
+                        <a href="#" class="w3-bar-item w3-button">Examen parcial</a>
                     </div>
-                    <p>Títulos, analíticos, libreta universitaria, etc.</p>
                 </div>
 
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <a href="tramites-constancias-y-certificados.html">
-                            <h5>Constancias y certificados</h5>
-                        </a>
-                    </div>
-                    <p>Alumno regular, materias aprobadas, título en trámite, etc.</p>
-                </div>
-
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <h5>Excepcionalidades</h5>
-                    </div>
-                    <p>Trámites de carácter excepcional evaluados por las autoridades.</p>
-                </div>
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                            <h5>Cambio de carrera</h5>
-                        </a>
-
-                    </div>
-                    <p>Reclamo de cambio y/o simultaneidad de carrera.</p>
-                </div>
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                            <h5>Reincorporaciones</h5>
-                        </a>
-
-                    </div>
-                    <p>Solicitar si no aprobó, al menos, dos materias durante un ciclo lectivo.</p>
-                </div>
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                            <h5>Homologaciones</h5>
-                        </a>
-
-                    </div>
-                    <p>Dirigidos a alumnos que se cambiaron de carrera y precisan equivalencias.</p>
-                </div>
-
-            </section>
+            </div>
         </section>
     </main>
     <footer class="pie">
@@ -168,6 +132,5 @@
             document.getElementById("mySidebar").style.display = "none";
         }
     </script>
+    
 </body>
-
-</html>
