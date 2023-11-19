@@ -96,46 +96,49 @@
 
         </aside>
 
-        <!-- CUERPO -->
-        <section class="bienvenido">
-            <div class="titulo">
-                <h2>Inscripcion a Materias</h2>
-                <p>Usted esta a punto de inscribirse a materias para la carrera:</p>
-            </div>
-            <!-- centrar contenido -->
-            <!-- Agrega la clase w3-table-all a la tabla para hacerla responsive -->
+        <section class="principal">
+            <!-- CUERPO -->
+            <section class="bienvenido">
+                <div class="titulo">
+                    <h2>Inscripcion a Materias</h2>
+                    <p>Usted esta a punto de inscribirse a materias para la carrera:</p>
+                </div>
+                <!-- centrar contenido -->
+                <!-- Agrega la clase w3-table-all a la tabla para hacerla responsive -->
 
-            <table class="w3-table-all">
-                <thead>
-                    <tr>
-                        <th>Código</th>
-                        <th>Carrera</th>
-                        <th>Plan</th>
-                        <th>Seleccionar</th>
-                    </tr>
-                </thead>
-                <tbody>
+                <table class="w3-table-all">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Carrera</th>
+                            <th>Plan</th>
+                            <th>Seleccionar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-                    <tr>
-                        <td>00</td>
-                        <td>Nombre</td>
-                        <td>00</td>
-                        <td><input type="checkbox" name="check"></td>
-                    </tr>
-                    <tr>
-                        <td>00</td>
-                        <td>Nombre</td>
-                        <td>00</td>
-                        <td><input type="checkbox" name="check"></td>
-                    </tr>
+                        <tr>
+                            <td>00</td>
+                            <td>Nombre</td>
+                            <td>00</td>
+                            <td><input type="checkbox" name="check"></td>
+                        </tr>
+                        <tr>
+                            <td>00</td>
+                            <td>Nombre</td>
+                            <td>00</td>
+                            <td><input type="checkbox" name="check"></td>
+                        </tr>
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
 
-            <button class="w3-button comenzar-btn" onclick="mostrarPopup()">Comenzar</button>
+                <button class="w3-button comenzar-btn" onclick="mostrarPopup()">Comenzar</button>
+            </section>
+            <footer class="pie">
+                <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
+            </footer>
         </section>
-
-
         <!-- Popup -->
         <div id="popup" class="popup">
             <div class="popup-content">
@@ -161,10 +164,6 @@
 
     </main>
 
-
-    <footer class="pie">
-        <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
-    </footer>
     <script>
         function w3_open() {
             document.getElementById("mySidebar").style.width = "100%";

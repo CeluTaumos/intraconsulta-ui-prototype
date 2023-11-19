@@ -96,64 +96,65 @@
 
         </aside>
 
-        <!-- CUERPO -->
-        <section class="bienvenido">
-            <div class="titulo">
-                <h2>Inscripcion a Materias</h2>
-                <p class="msj-confirmacion"><i class="fa-regular fa-circle-check"></i> Usted se a inscripto a las siguiente materias:</p>
-            </div>
-            <!-- centrar contenido -->
-            <!-- Agrega la clase w3-table-all a la tabla para hacerla responsive -->
-            <table class="w3-table-all">
-                <thead>
-                    <tr>
-                        <th>Carrera</th>
-                        <th>Código</th>
-                        <th>Materia</th>
-                        <th>Comision</th>
-                        <th>Periodo</th>
-                        <th>Pago</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>00</td>
-                        <td>00</td>
-                        <td>Nombre Materia</td>
-                        <td>Nro Comision</td>
-                        <td>1er Cuatrimestre</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>00</td>
-                        <td>00</td>
-                        <td>Nombre Materia</td>
-                        <td>Nro Comision</td>
-                        <td>1er Cuatrimestre</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>00</td>
-                        <td>00</td>
-                        <td>Nombre Materia</td>
-                        <td>Nro Comision</td>
-                        <td>1er Cuatrimestre</td>
-                        <td>--</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p class="comp">en caso de solicitar reclamos, puede <a href="#">descargar el comprobante aqui</a></p>
-            <button class="w3-button comenzar-btn" onclick="volver()">Finalizar</button>
+        <section class="principal">
+            <!-- CUERPO -->
+            <section class="bienvenido">
+                <div class="titulo">
+                    <h2>Inscripcion a Materias</h2>
+                    <p class="msj-confirmacion"><i class="fa-regular fa-circle-check"></i> Usted se a inscripto a las
+                        siguiente materias:</p>
+                </div>
+                <!-- centrar contenido -->
+                <!-- Agrega la clase w3-table-all a la tabla para hacerla responsive -->
+                <table class="w3-table-all">
+                    <thead>
+                        <tr>
+                            <th>Carrera</th>
+                            <th>Código</th>
+                            <th>Materia</th>
+                            <th>Comision</th>
+                            <th>Periodo</th>
+                            <th>Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>Nombre Materia</td>
+                            <td>Nro Comision</td>
+                            <td>1er Cuatrimestre</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>Nombre Materia</td>
+                            <td>Nro Comision</td>
+                            <td>1er Cuatrimestre</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>Nombre Materia</td>
+                            <td>Nro Comision</td>
+                            <td>1er Cuatrimestre</td>
+                            <td>--</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="comp">en caso de solicitar reclamos, puede <a href="#">descargar el comprobante aqui</a></p>
+                <button class="w3-button comenzar-btn" onclick="volver()">Finalizar</button>
+            </section>
+            <footer class="pie">
+                <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
+            </footer>
         </section>
-
-
 
     </main>
 
 
-    <footer class="pie">
-        <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
-    </footer>
     <script>
         function w3_open() {
             document.getElementById("mySidebar").style.width = "100%";
@@ -165,7 +166,7 @@
         }
     </script>
     <script>
-       
+
         // Función para aceptar el popup
         function volver() {
             window.location.href = 'inicio-light.html';

@@ -97,29 +97,31 @@
 
         </aside>
 
-        <!-- CUERPO -->
-        <section class="bienvenido">
-            <div class="titulo">
-                <h2>Constancias y certificados</h2>
-            </div>
-            <!-- flujo  -->
-            <div class="columna">
-                <div class="mensaje-con-select">
-                    <p>Seleccione las constancia que desea tramitar: </p>
-                    <select class="select-t">
-                        <option value="">Alumno regular</option>
-                        <option value="">Ultimas materias</option>
-                    </select>
+        <section class="principal">
+            <!-- CUERPO -->
+            <section class="bienvenido">
+                <div class="titulo">
+                    <h2>Constancias y certificados</h2>
                 </div>
-                <button class="w3-button aceptar-btn" onclick="ir()">Comenzar tramite</button>
+                <!-- flujo  -->
+                <div class="columna">
+                    <div class="mensaje-con-select">
+                        <p>Seleccione las constancia que desea tramitar: </p>
+                        <select class="select-t">
+                            <option value="">Alumno regular</option>
+                            <option value="">Ultimas materias</option>
+                        </select>
+                    </div>
+                    <button class="w3-button aceptar-btn" onclick="ir()">Comenzar tramite</button>
 
-            </div>
+                </div>
 
+            </section>
+            <footer class="pie">
+                <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
+            </footer>
         </section>
     </main>
-    <footer class="pie">
-        <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
-    </footer>
     <script>
         function w3_open() {
             document.getElementById("mySidebar").style.width = "100%";
@@ -130,7 +132,7 @@
             document.getElementById("mySidebar").style.display = "none";
         }
 
-        function ir(){
+        function ir() {
             window.location.href = 'formulario-tramite.html';
         }
     </script>

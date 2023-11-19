@@ -97,61 +97,63 @@
 
         </aside>
 
-        <!-- CUERPO -->
-        <section class="bienvenido">
-            <div class="titulo">
-                <h2>Constancia de alumno regular</h2>
-            </div>
-            <!-- flujo  -->
-            <div class="columna">
-                <p class="paso">1. seleccione la carrera por la que desea solicitar la constancia:</p>
-                <table class="w3-table-all">
-                    <thead>
-                        <tr>
-                            <th>Agregar/quitar</th>
-                            <th>Código</th>
-                            <th>Carrera</th>
-                            <th>Plan</th>
+        <section class="principal">
+            <!-- CUERPO -->
+            <section class="bienvenido">
+                <div class="titulo">
+                    <h2>Constancia de alumno regular</h2>
+                </div>
+                <!-- flujo  -->
+                <div class="columna">
+                    <p class="paso">1. seleccione la carrera por la que desea solicitar la constancia:</p>
+                    <table class="w3-table-all">
+                        <thead>
+                            <tr>
+                                <th>Agregar/quitar</th>
+                                <th>Código</th>
+                                <th>Carrera</th>
+                                <th>Plan</th>
 
-                        </tr>
-                    </thead>
-                    <tbody>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                        <tr>
-                            <td><input type="checkbox" name="check"></td>
-                            <td>00</td>
-                            <td>Nombre</td>
-                            <td>00</td>
+                            <tr>
+                                <td><input type="checkbox" name="check"></td>
+                                <td>00</td>
+                                <td>Nombre</td>
+                                <td>00</td>
 
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="check"></td>
-                            <td>00</td>
-                            <td>Nombre</td>
-                            <td>00</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="check"></td>
+                                <td>00</td>
+                                <td>Nombre</td>
+                                <td>00</td>
 
-                        </tr>
+                            </tr>
 
-                    </tbody>
+                        </tbody>
 
-                </table>
-                <p class="pie-tabla">Si selecciona mas de una carrera, debera pagar por cada una de ellas.</p>
-                <p class="paso">2. Ingrese el nombre de la institucion a presentar el comprobante:</p>
-                <input type="text" class="input-t">
-                <p class="paso">3. Ingrese el correo electronico al que desea que le llegue el certificado:</p>
-                <input type="text" class="input-t">
+                    </table>
+                    <p class="pie-tabla">Si selecciona mas de una carrera, debera pagar por cada una de ellas.</p>
+                    <p class="paso">2. Ingrese el nombre de la institucion a presentar el comprobante:</p>
+                    <input type="text" class="input-t">
+                    <p class="paso">3. Ingrese el correo electronico al que desea que le llegue el certificado:</p>
+                    <input type="text" class="input-t">
 
-                <button class="w3-button aceptar-btn" onclick="procesar()">Solicitar constancia</button>
-                <p id="ok"></p>
-                <button class="w3-button comenzar-btn" onclick="volver()">Volver</button>
+                    <button class="w3-button aceptar-btn" onclick="procesar()">Solicitar constancia</button>
+                    <p id="ok"></p>
+                    <button class="w3-button comenzar-btn" onclick="volver()">Volver</button>
 
-            </div>
+                </div>
 
+            </section>
+            <footer class="pie">
+                <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
+            </footer>
         </section>
     </main>
-    <footer class="pie">
-        <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
-    </footer>
     <script>
         function w3_open() {
             document.getElementById("mySidebar").style.width = "100%";

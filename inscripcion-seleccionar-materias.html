@@ -95,62 +95,64 @@
             </div>
 
         </aside>
-
-        <!-- CUERPO -->
-        <section class="bienvenido">
-            <div class="titulo">
-                <h2>Inscripcion a Materias</h2>
-                <p>Plan de estudios: <span class="plan-est">NOMBRE CARRERA NRO PLAN</span></p>
-            </div>
-            <!-- centrar contenido -->
-            <!-- Agrega la clase w3-table-all a la tabla para hacerla responsive -->
-            <table class="w3-table-all">
-                <thead>
-                    <tr>
-                        <th>Código</th>
-                        <th>Materia</th>
-                        <th>Comision/dia/modalidad</th>
-                        <th>Agregar/quitar</th>
-                        <th>Condicion</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>00</td>
-                        <td>Nombre materia</td>
-                        <td><select name="" id="">
-                                <option value="">001/LuMa 8a12/virtual</option>
-                                <option value="">002/MaSa 14a18/virtual</option>
-                            </select></td>
-                        <td><input type="checkbox"></td>
-                        <td>Puede promocionar</td>
-                    </tr>
-                    <tr>
-                        <td>00</td>
-                        <td>Nombre materia</td>
-                        <td><select name="" id="">
-                                <option value="">001/LuMa 8a12/virtual</option>
-                                <option value="">002/MaSa 14a18/virtual</option>
-                            </select></td>
-                        <td><input type="checkbox"></td>
-                        <td>Adeuda final</td>
-                    </tr>
-                    <tr>
-                        <td>00</td>
-                        <td>Nombre materia</td>
-                        <td><select name="" id="">
-                                <option value="">001/LuMa 8a12/virtual</option>
-                                <option value="">002/MaSa 14a18/virtual</option>
-                            </select></td>
-                        <td><input type="checkbox"></td>
-                        <td>Puede promocionar</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button class="w3-button aceptar-btn" onclick="mostrarPopup()">Aceptar</button>
+        <section class="principal">
+            <!-- CUERPO -->
+            <section class="bienvenido">
+                <div class="titulo">
+                    <h2>Inscripcion a Materias</h2>
+                    <p>Plan de estudios: <span class="plan-est">NOMBRE CARRERA NRO PLAN</span></p>
+                </div>
+                <!-- centrar contenido -->
+                <!-- Agrega la clase w3-table-all a la tabla para hacerla responsive -->
+                <table class="w3-table-all">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Materia</th>
+                            <th>Comision/dia/modalidad</th>
+                            <th>Agregar/quitar</th>
+                            <th>Condicion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>00</td>
+                            <td>Nombre materia</td>
+                            <td><select name="" id="">
+                                    <option value="">001/LuMa 8a12/virtual</option>
+                                    <option value="">002/MaSa 14a18/virtual</option>
+                                </select></td>
+                            <td><input type="checkbox"></td>
+                            <td>Puede promocionar</td>
+                        </tr>
+                        <tr>
+                            <td>00</td>
+                            <td>Nombre materia</td>
+                            <td><select name="" id="">
+                                    <option value="">001/LuMa 8a12/virtual</option>
+                                    <option value="">002/MaSa 14a18/virtual</option>
+                                </select></td>
+                            <td><input type="checkbox"></td>
+                            <td>Adeuda final</td>
+                        </tr>
+                        <tr>
+                            <td>00</td>
+                            <td>Nombre materia</td>
+                            <td><select name="" id="">
+                                    <option value="">001/LuMa 8a12/virtual</option>
+                                    <option value="">002/MaSa 14a18/virtual</option>
+                                </select></td>
+                            <td><input type="checkbox"></td>
+                            <td>Puede promocionar</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="w3-button aceptar-btn" onclick="mostrarPopup()">Aceptar</button>
+            </section>
+            <footer class="pie">
+                <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
+            </footer>
         </section>
-
-
         <!-- Popup -->
         <div id="popup" class="popup">
             <div class="popup-content" id="popupConf">
@@ -189,18 +191,16 @@
 
 
                 <div class="popup-buttons">
-                    <button class="w3-button popup-btn popup-btn-aceptar" onclick="aceptarPopup()"><i class="fa-solid fa-check"></i> Ok</button>
-                    <button class="w3-button popup-btn popup-btn-aceptar" onclick="cancelarPopup()"><i class="fa-solid fa-pencil"></i> editar</button>
+                    <button class="w3-button popup-btn popup-btn-aceptar" onclick="aceptarPopup()"><i
+                            class="fa-solid fa-check"></i> Ok</button>
+                    <button class="w3-button popup-btn popup-btn-aceptar" onclick="cancelarPopup()"><i
+                            class="fa-solid fa-pencil"></i> editar</button>
                 </div>
             </div>
         </div>
 
     </main>
 
-
-    <footer class="pie">
-        <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
-    </footer>
     <script>
         function w3_open() {
             document.getElementById("mySidebar").style.width = "100%";
