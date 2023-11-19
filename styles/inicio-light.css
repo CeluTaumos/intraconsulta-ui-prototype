@@ -7,14 +7,15 @@
 body {
   margin: 0;
   padding: 0;
-
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-
   font-size: small;
 }
 
-
+.dark{
+  background-color: #0c0a0a;
+  color: white;
+}
 
 .header {
   display: flex;
@@ -252,7 +253,17 @@ main {
   height: 100%;
   width: 100%;
 }
-
+.caja-materia-dark{
+  box-sizing: border-box;
+  border: 0.13em solid #b3b3b3;
+  background-color: #4D4C4C;
+  color: white;
+  padding: 5%;
+  margin: 5%;
+  font-size: medium;
+  height: 100%;
+  width: 100%;
+}
 .caja-materia-titulo {
   display: flex;
   font-size: 2em;
@@ -271,6 +282,14 @@ main {
   color: black;
 }
 
+.caja-materia-dark a{
+  text-decoration: none;
+  color: rgb(255, 255, 255)
+}
+
+.caja-materia-dark a:hover{
+  color: #2196f3;
+}
 .caja-materia-titulo h5:hover {
   color: #2196f3;
 }
@@ -635,3 +654,4 @@ footer {
     flex-direction: row;
   }
 }
+
