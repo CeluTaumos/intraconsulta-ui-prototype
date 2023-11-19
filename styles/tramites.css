@@ -30,3 +30,24 @@
     height: 100%;
     padding: 5px;
   }
+
+  .paso{
+    color:#2196F3;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .pie-tabla{
+    font-style: italic;
+    margin-top: -20px;
+  }
+
+  .input-t{
+    width: 300px;
+    padding: 5px;
+  }
+
+  #ok{
+    font-weight: bold;
+
+  }

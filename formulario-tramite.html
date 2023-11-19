@@ -104,7 +104,47 @@
             </div>
             <!-- flujo  -->
             <div class="columna">
-               <p class="paso">1. seleccione la carrera por la que desea solicitar la constancia:</p>
+                <p class="paso">1. seleccione la carrera por la que desea solicitar la constancia:</p>
+                <table class="w3-table-all">
+                    <thead>
+                        <tr>
+                            <th>Agregar/quitar</th>
+                            <th>Código</th>
+                            <th>Carrera</th>
+                            <th>Plan</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td><input type="checkbox" name="check"></td>
+                            <td>00</td>
+                            <td>Nombre</td>
+                            <td>00</td>
+
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="check"></td>
+                            <td>00</td>
+                            <td>Nombre</td>
+                            <td>00</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <p class="pie-tabla">Si selecciona mas de una carrera, debera pagar por cada una de ellas.</p>
+                <p class="paso">2. Ingrese el nombre de la institucion a presentar el comprobante:</p>
+                <input type="text" class="input-t">
+                <p class="paso">3. Ingrese el correo electronico al que desea que le llegue el certificado:</p>
+                <input type="text" class="input-t">
+
+                <button class="w3-button aceptar-btn" onclick="procesar()">Solicitar constancia</button>
+                <p id="ok"></p>
+                <button class="w3-button comenzar-btn" onclick="volver()">Volver</button>
+
             </div>
 
         </section>
@@ -122,8 +162,12 @@
             document.getElementById("mySidebar").style.display = "none";
         }
 
-        function ir(){
-            window.location.href = 'formulario-tramite.html';
+        function volver() {
+            window.location.href = 'constancia-seleccionar.html';
+        }
+
+        function procesar() {
+            document.getElementById('ok').innerHTML = "La constancia se envio correctamente.";
         }
     </script>
 </body>
