@@ -1,10 +1,9 @@
-
-.titulo{
+.titulo {
     font-size: 1.30em;
     text-align: center;
 }
 
-h2{
+h2 {
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -14,8 +13,9 @@ h2{
     font-weight: bold;
 }
 
-.caja-principal{
-    display: flex;flex-direction: column;
+.caja-principal {
+    display: flex;
+    flex-direction: column;
     gap: 1.25em;
     margin: 2%;
     align-items: center;
@@ -24,7 +24,7 @@ h2{
     align-content: center;
 }
 
-.cajita{
+.cajita {
     background-color: #519253;
     width: 60%;
     box-sizing: border-box;
@@ -33,12 +33,22 @@ h2{
     font-weight: bold;
     color: white;
     font-size: 1.25em;
-    
+
 }
-.caja-principal :hover{
+
+.caja-principal :hover {
     background-color: #2196f3;
     transition: 0.5s;
 }
-.pie{
+
+.pie {
     margin-top: 5%;
+}
+
+.principal {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 85%;
 }
