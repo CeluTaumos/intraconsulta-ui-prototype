@@ -275,6 +275,10 @@ main {
   color: #2196f3;
 }
 
+.caja-materia-titulo a:hover {
+  color: #2196f3;
+}
+
 .caja-materia-titulo {
   display: flex;
   font-size: 1.25em;

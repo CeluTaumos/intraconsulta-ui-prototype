@@ -206,3 +206,8 @@ font-size: large;
     font-size: 20px;
 }
 
+.selecion-tramite a:hover{
+    text-decoration: none;
+    color: #2196F3;
+}
+

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/inicio-light.css">
     <link rel="stylesheet" href="styles/generales.css">
     <link rel="stylesheet" href="styles/tramites.css">
+    <link rel="stylesheet" href="styles/flujo-inscripciones.css">
     <a href="https://www.w3schools.com/"></a>
 
     <script src="https://kit.fontawesome.com/bbc4ebec2d.js" crossorigin="anonymous"></script>
@@ -99,61 +100,13 @@
         <!-- CUERPO -->
         <section class="bienvenido">
             <div class="titulo">
-                <h2>Trámites online</h2>
+                <h2>Constancia de alumno regular</h2>
             </div>
-            <!-- CAJA TRAMITES  -->
-            <section class="caja-tramites">
+            <!-- flujo  -->
+            <div class="columna">
+               <p class="paso">1. seleccione la carrera por la que desea solicitar la constancia:</p>
+            </div>
 
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <h5>Solicitudes</h5>
-                        </a>
-                    </div>
-                    <p>Títulos, analíticos, libreta universitaria, etc.</p>
-                </div>
-
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <h5> <a href="constancia-seleccionar.html">Constancias y
-                                certificados</a></h5>
-
-                    </div>
-                    <p>Alumno regular, materias aprobadas, título en trámite, etc.</p>
-                </div>
-
-
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <h5>Excepcionalidades</h5>
-                    </div>
-                    <p>Trámites de carácter excepcional evaluados por las autoridades.</p>
-                </div>
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <h5>Cambio de carrera</h5>
-                        </a>
-
-                    </div>
-                    <p>Reclamo de cambio y/o simultaneidad de carrera.</p>
-                </div>
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <h5>Reincorporaciones</h5>
-                        </a>
-
-                    </div>
-                    <p>Solicitar si no aprobó, al menos, dos materias durante un ciclo lectivo.</p>
-                </div>
-                <div class="w3-card caja-materia">
-                    <div class="caja-materia-titulo">
-                        <h5>Homologaciones</h5>
-                        </a>
-
-                    </div>
-                    <p>Dirigidos a alumnos que se cambiaron de carrera y precisan equivalencias.</p>
-                </div>
-
-            </section>
         </section>
     </main>
     <footer class="pie">
@@ -167,6 +120,10 @@
 
         function w3_close() {
             document.getElementById("mySidebar").style.display = "none";
+        }
+
+        function ir(){
+            window.location.href = 'formulario-tramite.html';
         }
     </script>
 </body>
