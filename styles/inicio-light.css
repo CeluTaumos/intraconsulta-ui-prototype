@@ -20,6 +20,8 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: -5px;
 }
 
 .user {
@@ -38,6 +40,7 @@ body {
 
   box-sizing: border-box;
   padding: 0.188em;
+  align-items: center;
 }
 
 .logos {
@@ -64,7 +67,8 @@ body {
 }
 
 #logo1 {
-  width: 10em;
+  width: 8.5em;
+  height: 2.3em;
 }
 
 .foto-perfil {
@@ -88,14 +92,13 @@ body {
   align-items: center;
   justify-content: space-between;
   display: 1;
+  align-items: center;
 
 }
 
 .menu ul {
   padding: 0%;
   margin: 0;
-
-
 }
 
 .menu a {
@@ -103,6 +106,7 @@ body {
   color: white;
   padding: 0.75em;
   font-weight: bold;
+  align-items: center;
 
 }
 
@@ -342,7 +346,7 @@ footer {
   text-align: center;
   justify-content: center;
   align-content: center;
-  border-top: solid 2px #4D4C4C;
+  border-top: solid 2px #aaa9a9;
   margin: 5%;
 }
 
@@ -685,7 +689,12 @@ footer {
   }
 
   footer {
-    flex-direction: row;
+    flex-direction: row; 
   }
+}
+
+.link-ins{
+  text-decoration: none;
+  color: #ffffff;
 }
 
