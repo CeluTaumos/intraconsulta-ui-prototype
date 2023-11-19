@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/inicio-light.css">
-    <link rel="stylesheet" href="styles/generales.css">
+    <link rel="stylesheet" href="../styles/inicio-light.css">
     <a href="https://www.w3schools.com/"></a>
 
     <script src="https://kit.fontawesome.com/bbc4ebec2d.js" crossorigin="anonymous"></script>
@@ -14,14 +13,14 @@
     <title>Intraconsulta</title>
 </head>
 
-<body>
+<body class="dark">
     <header>
         <!-- HEADER -->
         <div class="header">
             <div class="logos">
-                <a href="inicio-light.html"><img src="img/unlam-light.png" alt="logo1" id="logo1"></a>
-                <img src="img/unlam-logo-grafico-solo.png" alt="logoAlt">
-                <img src="./img/intraconsulta.png" alt="logo intraconsulta">
+                <a href="inicio-dark.html"><img src="../img/logo-unlam.png" alt="logo1" id="logo1"></a>
+                <img src="../img/unlam-logo-grafico-solo.png" alt="logoAlt">
+                <img src="../img/intraconsulta.png" alt="logo intraconsulta">
                 <p>Intraconsulta</p>
             </div>
             <div class="user">
@@ -36,7 +35,7 @@
                         <a href="">Cerrar Sesión</a>
                     </div>
                 </div>
-                <img src="img/foto_perfil.jpg" class="foto-perfil" alt="foto_perfil" height="40px" width="40px">
+                <img src="../img/foto_perfil.jpg" class="foto-perfil" alt="foto_perfil" height="40px" width="40px">
             </div>
         </div>
 
@@ -48,16 +47,16 @@
             </div>
             <!-- CAMBIAR A DARKMODE Y NOTI -->
             <div class="centrar">
-                <img src="img/notification (1).png" alt="logo intraconsulta" id="campanita" onclick="showPopup()">
+                <img src="../img/notification (1).png" alt="logo intraconsulta" id="campanita" onclick="showPopup()">
 
-                <a href="darks/inicio-dark.html" class="sun"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></a>
+                <a href="../inicio-light.html" class="sun"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></a>
             </div>
         </div>
 
         <!-- MENU HAMBURGUESA -->
         <div class="menu menu-hamburguesa">
             <div class="centrar">
-                <img src="img/notification (1).png" alt="logo intraonsulta" id="campanita">
+                <img src="../img/notification (1).png" alt="logo intraonsulta" id="campanita">
                 <a href="inicio-light.html" class="sun"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></a>
             </div>
             <span title="open Sidebar" style="display: inline-block;" id="openNav"
@@ -74,20 +73,20 @@
             </div>
         </div>
         <!-- Popup container -->
-        <div id="popupContainer" class="popup-container">
+        <div id="popupContainer" class="popup-container-dark">
             <div class="popup-content popoup">
                 <!-- Contenido del popup -->
                 <!-- Botón de cierre -->
                 <a href="javascript:void(0);" class="close-popup" onclick="closePopup()">&times;</a>
                 <h3>Notificaciones y Novedades</h3>
-                <div class="popup-cajitaa">
-                    <div class="popup-cajita">
+                <div class="popup-cajitaa-dark">
+                    <div class="popup-cajita-dark">
                         <h4>Ya se encuentran disponibles las inscripciones.</h4>
                         <p>publicado el 5/11/2023.</p>
                     </div>
                     <a href="" class="btn">inscribirse</a>
                 </div>
-                <div class="popup-cajita">
+                <div class="popup-cajita-dark">
 
                     <h4>Nueva interfaz de intraconsulta.</h4>
                     <p>Publicado el 3/11/2023.</p>
@@ -104,80 +103,78 @@
             <div class="caja-aside">
                 <h2>Herramientas</h2>
                 <ul class="aside-items">
-                    <li><img src="./img/tools/officewhite-removebg-preview.png" alt="microsoft office logo" id="office"
+                    <li><img src="../img/tools/officewhite-removebg-preview.png" alt="microsoft office logo" id="office"
                             width="24" height="24">Cuenta Office 365 </li>
-                    <li> <img src="./img/tools/phone.svg" alt="telefono imagen">Descargar App </li>
+                    <li> <img src="../img/tools/phone.svg" alt="telefono imagen">Descargar App </li>
                 </ul>
                 <hr class="linea_aside">
                 <h2>Otras operaciones</h2>
                 <ul class="aside-items">
-                    <li><img src="./img/tools/biblioteca_digital.svg" alt="biblioteca digital logo"
+                    <li><img src="../img/tools/biblioteca_digital.svg" alt="biblioteca digital logo"
                             id="biblioteca_digital" width="24" height="24">Biblioteca digital</li>
-                    <li><img src="./img/tools/contacto.svg" alt="contacto logo" id="contacto_logo" width="24"
+                    <li><img src="../img/tools/contacto.svg" alt="contacto logo" id="contacto_logo" width="24"
                             height="24">Contacto</li>
                 </ul>
             </div>
 
         </aside>
 
-        <section class="principal">
-            <!-- CUERPO -->
-            <section class="bienvenido">
-                <div class="bienvenido-materias">
-                    <h2 id="tituloBien">Bienvenido APELLIDO NOMBRE. Tu estado actual es: <span id="activo">Activo</span>
-                    </h2>
+        <!-- CUERPO -->
+        <section class="bienvenido">
+            <div class="bienvenido-materias">
+                <h2 id="tituloBien">Bienvenido APELLIDO NOMBRE. Tu estado actual es: <span id="activo">Activo</span>
+                </h2>
+            </div>
+            <!-- CAJAS HERRAMIENTAS  -->
+            <section class="caja-herramientas">
+
+
+                <div class="w3-card caja-materia-dark">
+                    <div class="caja-materia-titulo">
+                        <img src="../img/tools/inscripciones.svg" alt="inscripciones imagen" id="tools">
+                        <a href="inscripciones.html">
+                            <h5>Inscripciones</h5>
+                        </a>
+                    </div>
+                    <p>Inscribite a materias y finales y realiza las verificaciones.</p>
                 </div>
-                <!-- CAJAS HERRAMIENTAS  -->
-                <section class="caja-herramientas">
 
 
-                    <div class="w3-card caja-materia">
-                        <div class="caja-materia-titulo">
-                            <img src="img/tools/inscripciones.svg" alt="inscripciones imagen" id="tools">
-                            <a href="inscripciones.html">
-                                <h5>Inscripciones</h5>
-                            </a>
-                        </div>
-                        <p>Inscribite a materias y finales y realiza las verificaciones.</p>
+                <div class="w3-card caja-materia-dark">
+                    <div class="caja-materia-titulo">
+                        <img src="../img/tools/matricula.svg" alt="matricula imagen" id="tools">
+                        <a href="mi-matricula.html">
+                            <h5>Mi matricula</h5>
+                        </a>
                     </div>
+                    <p>Accedé a tu historia académica, tus materias en curso y tu plan de estudio.</p>
+                </div>
+                <div class="w3-card caja-materia-dark">
+                    <div class="caja-materia-titulo">
 
-
-                    <div class="w3-card caja-materia">
-                        <div class="caja-materia-titulo">
-                            <img src="img/tools/matricula.svg" alt="matricula imagen" id="tools">
-                            <a href="mi-matricula.html">
-                                <h5>Mi matricula</h5>
-                            </a>
-                        </div>
-                        <p>Accedé a tu historia académica, tus materias en curso y tu plan de estudio.</p>
+                        <img src="../img/tools/cuotas.svg" alt="cuotas imagen" id="tools">
+                        <h5>Pagos</h5>
                     </div>
-                    <div class="w3-card caja-materia">
-                        <div class="caja-materia-titulo">
+                    <p>Accedé al portal de pagos.</p>
+                </div>
+                <div class="w3-card caja-materia-dark">
+                    <div class="caja-materia-titulo">
+                        <img src="../img/tools/tramites_online 1.svg" alt="tramites imagen" id="tools">
+                        <a href="tramites.html">
+                            <h5>Trámites online</h5>
+                        </a>
 
-                            <img src="img/tools/cuotas.svg" alt="cuotas imagen" id="tools">
-                            <h5>Pagos</h5>
-                        </div>
-                        <p>Accedé al portal de pagos.</p>
                     </div>
-                    <div class="w3-card caja-materia">
-                        <div class="caja-materia-titulo">
-                            <img src="img/tools/tramites_online 1.svg" alt="tramites imagen" id="tools">
-                            <a href="tramites.html">
-                                <h5>Trámites online</h5>
-                            </a>
-
-                        </div>
-                        <p>Solicitudes, constancias, certificados y otras consultas.</p>
-                    </div>
+                    <p>Solicitudes, constancias, certificados y otras consultas.</p>
+                </div>
 
 
-                </section>
             </section>
-            <footer class="pie">
-                <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
-            </footer>
         </section>
     </main>
+    <footer class="pie">
+        <p>Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2023</p>
+    </footer>
     <script>
         function w3_open() {
             document.getElementById("mySidebar").style.width = "100%";
