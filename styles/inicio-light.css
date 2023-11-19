@@ -164,10 +164,10 @@ aside {
 
 .aside-items li {
   padding: 0.625em;
-  padding-left: 1.25em;
+  /* padding-left: 1.25em; */
   padding: 0.625em;
   display: flex;
-  padding-left: 1.25em;
+  /* padding-left: 1.25em; */
   align-content: flex-start;
   justify-content: flex-start;
   align-items: center;

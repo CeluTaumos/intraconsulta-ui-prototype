@@ -15,7 +15,8 @@ h2{
 }
 
 .caja-principal{
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
     gap: 1.25em;
     margin: 2%;
     align-items: center;
@@ -42,3 +43,10 @@ h2{
 .pie{
     margin-top: 5%;
 }
+.principal{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 85%; /* El ancho restante */
+    }
