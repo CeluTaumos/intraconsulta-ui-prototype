@@ -361,23 +361,6 @@ footer {
   font-weight: bold;
 }
 
-.boton_ayuda {
-  background-color: #2196f3;
-  border-radius: 31px 32px 0px 0px;
-  position: fixed;
-  top: 661px;
-  bottom: 72px;
-  right: 63px;
-  padding: 22px;
-  text-align: center;
-  color: white
-}
-
-.boton_ayuda:hover {
-  background-color: #1c7dcc;
-  transition-duration: 1s;
-}
-
 #hamburguesa {
   margin: 0;
   font-size: 2.5em;
@@ -519,21 +502,25 @@ footer {
   text-decoration: none;
 }
 
-.btn a {
-  text-decoration: none;
-}
-
-.fixed-bottom{
-  width:40%;
+.boton-ayuda {
+  position: fixed;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  right: 15px;
+  left: 0;
+  bottom: 0px;
+  margin-left: auto !important;
+  z-index: 99999;
+  /* width: 40% !important; */
+  height: auto;
 }
-.fixed-bottom a{
+
+.boton-ayuda>a {
+  background-color: #2196f3;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  padding: 15px;
   text-decoration: none;
-}
-.btn-primary {
-  border-radius: 10px 10px 0px 0px !important;
 }
 
 /* RESPONSIVE  */
