@@ -48,7 +48,8 @@ h2 {
 
 
 .principal {
-    justify-content: center;
+    display: flex;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     align-content: center;
@@ -61,4 +62,11 @@ footer{
 
 main{
     height: 800px;
+}
+
+.boton-ayuda{
+    background-color: #2196F3;
+    color: white;
+    border-style: none;
+    border-radius: 15px 15px 0px 0px;
 }

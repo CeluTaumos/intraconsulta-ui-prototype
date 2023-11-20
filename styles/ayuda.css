@@ -1,0 +1,19 @@
+.caja-principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cajita {
+    width: 357px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.cajita:hover p {
+    display: block;
+}
+
+.cajita p {
+    display: none;
+    margin: 0;
+}

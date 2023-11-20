@@ -12,7 +12,7 @@ body {
   font-size: small;
 }
 
-.dark{
+.dark {
   background-color: #0c0a0a;
   color: white;
 }
@@ -255,7 +255,8 @@ main {
   height: 100%;
   width: 100%;
 }
-.caja-materia-dark{
+
+.caja-materia-dark {
   box-sizing: border-box;
   border: 0.13em solid #b3b3b3;
   background-color: #4D4C4C;
@@ -266,6 +267,7 @@ main {
   height: 100%;
   width: 100%;
 }
+
 .caja-materia-titulo {
   display: flex;
   font-size: 2em;
@@ -278,23 +280,26 @@ main {
   border: 0.13em solid #2196f3;
   transition-duration: 0.5s;
 }
+
 .caja-materia-dark:hover {
   border: 0.13em solid #2196f3;
   transition-duration: 0.5s;
 }
+
 .caja-materia a {
   text-decoration: none;
   color: black;
 }
 
-.caja-materia-dark a{
+.caja-materia-dark a {
   text-decoration: none;
   color: rgb(255, 255, 255)
 }
 
-.caja-materia-dark a:hover{
+.caja-materia-dark a:hover {
   color: #2196f3;
 }
+
 .caja-materia-titulo h5:hover {
   color: #2196f3;
 }
@@ -433,7 +438,7 @@ footer {
   align-content: flex-start;
   justify-content: center;
   align-items: flex-start;
-  
+
 }
 
 .close-popup {
@@ -473,6 +478,7 @@ footer {
   align-content: center;
   justify-content: center;
 }
+
 .popup-cajitaa {
   background-color: #F5F4F8;
   display: flex;
@@ -482,6 +488,7 @@ footer {
   padding: 1%;
 
 }
+
 .popup-cajitaa-dark {
   background-color: rgb(89, 89, 89);
   display: flex;
@@ -514,6 +521,58 @@ footer {
 
 .btn a {
   text-decoration: none;
+}
+
+/* Dropup Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: fixed;
+  display: inline-block;
+  z-index: 99;
+  top: 674px;
+  right: 1112px;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropup-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content p:hover {
+  background-color: #ddd
+}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+  background-color: #2980B9;
 }
 
 /* RESPONSIVE  */
@@ -689,12 +748,11 @@ footer {
   }
 
   footer {
-    flex-direction: row; 
+    flex-direction: row;
   }
 }
 
-.link-ins{
+.link-ins {
   text-decoration: none;
   color: #ffffff;
 }
-
